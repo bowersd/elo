@@ -47,7 +47,7 @@ def ranking(detail, k, *results):
 
 def pprint(*ranked):
     for x in ranked:
-        print "{:5}{}".format(x[0], int(round(x[1])))
+        print("{:5}{}".format(x[0], int(round(x[1]))))
 
 def write_csv(filename, detail, k, **teams):
     holder = []
