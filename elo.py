@@ -11,7 +11,7 @@ def spread(e1, e2, c):
 
 def pwin(e1, e2):
     """probability e1 beats e2"""
-    return (1.0/(10**((e2-e1)/400)+1))
+    return (1.0/(1+(10**((e2-e1)/float(400)))))
 
 def elo(team, k):
     """season-long evaluation of team"""
