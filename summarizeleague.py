@@ -13,8 +13,8 @@ def parse_games(*games):
     """convert games to long form outcomes"""
     holder = []
     for g in games:
-        holder.append([g[0], int(g[1])-int(g[3]), g[2]]+g[4:])
-        holder.append([g[2], int(g[3])-int(g[1]), g[0]]+g[4:])
+        holder.append([g[0], float(g[1])-float(g[3]), g[2]]+g[4:])
+        holder.append([g[2], float(g[3])-float(g[1]), g[0]]+g[4:])
     return holder
 
 def sort_by_date(*games):
